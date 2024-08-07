@@ -9,11 +9,11 @@ namespace Solid_Principle
         {
             Order order = new Order
             {
-                TotalPrice = 50,
-                TotalWeight = 5
+                TotalPrice = 500,
+                TotalWeight = 50
             };
 
-            IShipping shippingService = new GroundService();
+            IShipping shippingService = new SeaService();
             int cost = shippingService.GetCost(order);
 
             Console.WriteLine($"The shipping cost is: {cost}");
