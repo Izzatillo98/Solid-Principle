@@ -3,6 +3,6 @@
     internal interface IShipping
     {
         int GetCost(Order order);
-        int GetData(Order order);
+        int GetData(Order order); 
     }
 }
