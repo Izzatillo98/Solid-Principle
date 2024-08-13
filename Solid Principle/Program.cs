@@ -14,7 +14,7 @@ namespace Solid_Principle
             };
 
             IShipping shippingService = new SeaService();
-            int cost = shippingService.GetCost(order);
+            int cost = shippingService.GetCost(order); 
 
             Console.WriteLine($"The shipping cost is: {cost}");
         }
